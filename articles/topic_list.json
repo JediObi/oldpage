@@ -1,9 +1,26 @@
 [{
     "title": "Bitcoin",
-    "description": "www.instagram.com",
+    "description": "algorithm,rpc,gensis,private chain",
     "pic_name": "Bitcoin_logo.svg",
     "pic_dimen": [307,64],
     "back_title": "",
     "back_description": ""
-}
+},
+{
+    "title": "BlockChain",
+    "description": "ethereum,fabric,nodejs rpc",
+    "pic_name": "BlockChain_logo.jpg",
+    "pic_dimen": [1200,600],
+    "back_title": "",
+    "back_description": ""
+},{
+    "title": "NodeJS",
+    "description": "node,webpack,react",
+    "pic_name": "NodeJS_logo.svg",
+    "pic_dimen": [590,361],
+    "back_title": "",
+    "back_description": ""
+},
+
+
 ]
