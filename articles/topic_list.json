@@ -21,6 +21,77 @@
     "pic_dimen": [590,361],
     "back_title": "",
     "back_description": ""
+},
+{
+    "title": "C++",
+    "description": "class,boost,network,thread",
+    "pic_name": "C++_logo.png",
+    "pic_dimen": [300,300],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Python",
+    "description": "fabric,machine learning,numpy,scipy,matplotlib,scikit-learn",
+    "pic_name": "Python_logo.png",
+    "pic_dimen": [290,82],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Java",
+    "description": "class,maven,spring,thread,proxy,tomcat,aio",
+    "pic_name": "Java_logo.jpg",
+    "pic_dimen": [750,572],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "MySQL",
+    "description": "mariadb,5.7,dump,import",
+    "pic_name": "MySQL_logo2.svg",
+    "pic_dimen": [388,264],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Android",
+    "description": "adb,avd,native",
+    "pic_name": "Android_logo.svg",
+    "pic_dimen": [480,480],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Android",
+    "description": "adb,avd,native",
+    "pic_name": "Android_logo.svg",
+    "pic_dimen": [480,480],
+    "back_title": "",
+    "back_description": ""
 }
-
+{
+    "title": "Machine Learning",
+    "description": "neural,svm,network,CNN",
+    "pic_name": "Machine_Learning_logo.svg",
+    "pic_dimen": [480,480],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Ubuntu",
+    "description": "18.04",
+    "pic_name": "Ubuntu_logo.svg",
+    "pic_dimen": [480,480],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "Shell",
+    "description": "ssh,zip,...",
+    "pic_name": "Shell_logo.svg",
+    "pic_dimen": [480,480],
+    "back_title": "",
+    "back_description": ""
+}
 ]
