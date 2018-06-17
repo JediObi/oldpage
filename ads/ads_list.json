@@ -1,0 +1,24 @@
+[
+    {
+        "index": 1,
+        "pic1_url": "https://img.alicdn.com/imgextra/i4/782731205/TB2qmvPfCfD8KJjSszhXXbIJFXa_!!782731205.jpg_430x430q90.jpg",
+        "pic1_dimen":[430,430],
+        "pic2_url": "https://img.alicdn.com/imgextra/i4/782731205/TB2qmvPfCfD8KJjSszhXXbIJFXa_!!782731205.jpg_430x430q90.jpg",
+        "pic2_dimen":[430,430],
+        "item_name": "camera",
+        "price": "￥4600.00",
+        "buy_url": "https://detail.tmall.com/item.htm?spm=a1z10.10022-b-s.196.1.3670452f831AnZ&id=532085668804&scene=taobao_shop&sku_properties=5919063:6536025",
+        "description": "测试"
+    },
+    {
+        "index": 2,
+        "pic1_url": "https://img.alicdn.com/imgextra/i4/782731205/TB2qmvPfCfD8KJjSszhXXbIJFXa_!!782731205.jpg_430x430q90.jpg",
+        "pic1_dimen":[430,430],
+        "pic2_url": "https://img.alicdn.com/imgextra/i4/782731205/TB2qmvPfCfD8KJjSszhXXbIJFXa_!!782731205.jpg_430x430q90.jpg",
+        "pic2_dimen":[430,430],
+        "item_name": "camera",
+        "price": "￥4600.00",
+        "buy_url": "https://detail.tmall.com/item.htm?spm=a1z10.10022-b-s.196.1.3670452f831AnZ&id=532085668804&scene=taobao_shop&sku_properties=5919063:6536025",
+        "description": "测试"
+    }
+]
