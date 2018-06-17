@@ -1,6 +1,6 @@
 [{
     "title": "Bitcoin",
-    "description": "algorithm,rpc,gensis,private chain",
+    "description": "algorithm,rpc,gensis",
     "pic_name": "Bitcoin_logo.svg",
     "pic_dimen": [307,64],
     "back_title": "",
@@ -32,7 +32,7 @@
 },
 {
     "title": "Python",
-    "description": "fabric,machine learning,numpy,scipy,matplotlib,scikit-learn",
+    "description": "fabric,numpy,scipy,matplot,sk-learn",
     "pic_name": "Python_logo.png",
     "pic_dimen": [290,82],
     "back_title": "",
@@ -40,7 +40,7 @@
 },
 {
     "title": "Java",
-    "description": "class,maven,spring,thread,proxy,tomcat,aio",
+    "description": "maven,spring,tomcat,aio",
     "pic_name": "Java_logo.jpg",
     "pic_dimen": [750,572],
     "back_title": "",
