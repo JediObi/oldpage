@@ -63,14 +63,6 @@
     "back_description": ""
 },
 {
-    "title": "Android",
-    "description": "adb,avd,native",
-    "pic_name": "Android_logo.svg",
-    "pic_dimen": [480,480],
-    "back_title": "",
-    "back_description": ""
-},
-{
     "title": "Machine Learning",
     "description": "neural,svm,network,CNN",
     "pic_name": "Machine_Learning_logo.svg",
