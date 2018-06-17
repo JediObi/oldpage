@@ -13,14 +13,14 @@
     "pic_dimen": [1200,600],
     "back_title": "",
     "back_description": ""
-},{
+},
+{
     "title": "NodeJS",
     "description": "node,webpack,react",
     "pic_name": "NodeJS_logo.svg",
     "pic_dimen": [590,361],
     "back_title": "",
     "back_description": ""
-},
-
+}
 
 ]
