@@ -10752,10 +10752,6 @@ a.ant-btn-sm {
   background: #36558f;
   overflow: hidden;
 }
-.main-layout {
-  /* background-color: #3f3f3f; */
-  /* background-color: #001529; */
-}
 .main-header {
   position: fixed;
   width: 100%;
@@ -10776,8 +10772,4 @@ a.ant-btn-sm {
   /* background-color: #3f3f3f; */
   /* background-color: green; */
   text-align: center;
-}
-.main-footer {
-  /* background-color: #3f3f3f; */
-  /* background-color: #001529; */
 }
