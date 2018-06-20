@@ -1,7 +1,9 @@
 ### **Json RPC**
 
-if a server runs with json-rpc.
-Anyone may send request to this server in json format.
+<hr>
+
+If a server runs with json-rpc.
+Anyone may send request to this server in json format. <br>
 ```
 {
     "jsonrpc" : 2.0,
@@ -10,6 +12,7 @@ Anyone may send request to this server in json format.
     "id" : 1
 }
 ```
-Just like an url ```http://localhost:8080/test_project/rpc``` with body```{"method":"sayHello","params":[],"id":1234}```.
+Just like an url ```http://localhost:8080/test_project/rpc``` with body```{"method":"sayHello","params":[],"id":1234}```. <br>
 A json-rpc calling is just like a traditional http request.
 Because we use json or key-value format to transform our message in http server.
+<hr>
