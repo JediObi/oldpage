@@ -1,5 +1,6 @@
 ### **Code (1) - install bitcoin**
 
+<hr>
 
 ### (1) runtime environment
 ```
@@ -7,7 +8,6 @@
 ```
 ### (2) clone from git
 ```
-
 ```
 
 ### (3)  compile and install
@@ -23,3 +23,5 @@
 ~:make -j
 ~:make install
 ```
+
+<hr>

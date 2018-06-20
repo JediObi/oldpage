@@ -1,11 +1,22 @@
-The most concise way to create private chain is that change the config parameters of the core code.
-You can see these config parameters in ```chainparams.cpp```.
+### **Code (2) - private chain**
 
-Now we start to create a private chain.
+<hr>
+
+The most concise way to create private chain is that change the config parameters of the core code. <br>
+You can see these config parameters in ```chainparams.cpp```. <br>
+
+Now we start to create a private chain. <br>
+
+<hr>
 
 ## (1) modify the genesis block
+
  #### 1) modify the coinbase info of genesis block
-+ ##### The original code ```CreateGenesisBlock``` to create genesis block.
+
++ ##### The original code 
+
+```CreateGenesisBlock``` to create genesis block. <br>
+
 ```
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
@@ -14,26 +25,37 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 ```
+
 + ##### the places need to modify
-1. the code of create genesis block
-```genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);```
-1231006505 nTime, the time of the block
-2. set mining difficulty, the lowest difficulty
-```consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");```
-3. total amount of coins
-```consensus.nSubsidyHalvingInterval = 210000;```
-4. change the initial reward
-```genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);```
-50 * COIN is the inital reward.
-5. change the time period of difficulty changing
+
+1. the code of create genesis block <br>
+```genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);``` <br>
+1231006505 nTime, the time of the block <br>
+
+2. set mining difficulty, the lowest difficulty <br>
+```consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");``` <br>
+
+3. total amount of coins <br>
+```consensus.nSubsidyHalvingInterval = 210000;``` <br>
+
+4. change the initial reward <br>
+```genesis = CreateGenesisBlock(1231006505, 2083236893, 0x1d00ffff, 1, 50 * COIN);``` <br>
+50 * COIN is the inital reward. <br>
+
+5. change the time period of difficulty changing <br>
+
 ```
 consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks to change difficulty
 consensus.nPowTargetSpacing = 10 * 60;  // the time interval of per block.
 consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
 ```
 
+<hr>
+
 ## (2) change network protocol magic number
-You can change it to any other byte.
+
+You can change it to any other byte. <br>
+
 ```
 pchMessageStart[0] = 0x0b;
 pchMessageStart[1] = 0x11;
@@ -41,16 +63,26 @@ pchMessageStart[2] = 0x09;
 pchMessageStart[3] = 0x07;
 ```
 
+<hr>
+
 ## (3) change listen port
-chainparams.cpp
+
+chainparams.cpp <br>
+
 ```
 nDefaultPort = 18333;
 ```
-chianparamsbase.cpp
+
+chianparamsbase.cpp <br>
+
 ```
 nRPCPort=8332;
 ```
+
+<hr>
+
 ## (4) change the definition of seed connection
+
 ```
 vSeeds.emplace_back("seed.bitcoin.sipa.be"); // Pieter Wuille, only supports x1, x5, x9, and xd
 vSeeds.emplace_back("dnsseed.bluematt.me"); // Matt Corallo, only supports x9
@@ -60,7 +92,10 @@ vSeeds.emplace_back("seed.bitcoin.jonasschnelli.ch"); // Jonas Schnelli, only su
 vSeeds.emplace_back("seed.btc.petertodd.org"); // Peter Todd, only supports x1, x5, x9, and xd
 vSeeds.emplace_back("seed.bitcoin.sprovoost.nl"); // Sjors Provoost
 ```
+<hr>
+
 ## (5) change the prefixes of bitcoin
+
 ```
 base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
 base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -69,18 +104,27 @@ base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
 base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 ```
 
+<hr>
+
 ## (6) coinbase maturity confirmations
+
 ```
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 100;
 ```
+
+<hr>
+
 ## (7) change checkpoint
-You can use the genesis block's check point. check point is used to prevent forks.
-You can start bitcoind once and get the genesis from logs.
+
+You can use the genesis block's check point. check point is used to prevent forks. <br>
+You can start bitcoind once and get the genesis from logs. <br>
+
 checkpointData = {
             {}
-}
+} <br>
 the original code.
+
 ```
 checkpointData = {
             {
@@ -100,16 +144,25 @@ checkpointData = {
             }
         };
 ```
-## (9) change the scriptPubKey
+
+<hr>
+
+## (8) change the scriptPubKey
+
 ```
 const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
 ```
 
-## (10) change the mining algorithm
-Bitcoind's original mining algorithm is in miner.cpp ScanHash.
-ScanHash will keep the block info's first 5 fields (version, prev_block, merkle_root, timestamp, bits), totally 76 bytes, unchanged and via ergodic Nonce and then concat the 5 fields and Nonce to compute hash.
-If the first K bytes is 0, then the hash is effective, mining susccess.
+<hr>
+
+## (9) change the mining algorithm
+
+Bitcoind's original mining algorithm is in miner.cpp ScanHash. <br>
+ScanHash will keep the block info's first 5 fields (version, prev_block, merkle_root, timestamp, bits), totally 76 bytes, unchanged and via ergodic Nonce and then concat the 5 fields and Nonce to compute hash. <br>
+If the first K bytes is 0, then the hash is effective, mining susccess. <br>
+
 mining.cpp
+
 ```
 UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGenerate, uint64_t nMaxTries, bool keepScript)
 {
@@ -164,4 +217,5 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
     return blockHashes;
 }
 ```
-通过为CBlock对象各字段赋值，然后调用GetHash()通过底层的CHash256和CSHA256等类来计算hash，然后验证工作量。
+
+通过为CBlock对象各字段赋值，然后调用GetHash()通过底层的CHash256和CSHA256等类来计算hash，然后验证工作量。 <br>
