@@ -1,10 +1,191 @@
 [{
-    "title": "readme",
-    "description": "./articles/BitCoin/readme.md",
-    "url": "readme.md",
+    "title": "(1) transaction data structure",
+    "description": "transaction,input,output",
+    "url": "(1) transaction data structure.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(2) testnet",
+    "description": "testnet docker",
+    "url": "(2) testnet.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(3) json-rpc",
+    "description": "curl rpc",
+    "url": "(3) json-rpc.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(4) OP_CHECKSIG 交易验签",
+    "description": "safety flow",
+    "url": "(4) OP_CHECKSIG 交易验签.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(5) 交易的数据结构和验证流程",
+    "description": "data structure,safety",
+    "url": "(5) 交易的数据结构和验证流程.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(6) 交易的安全性保障",
+    "description": "safety C++",
+    "url": "(6) 交易的安全性保障.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(7) 区块和挖矿",
+    "description": "block,mining",
+    "url": "(7) 区块和挖矿.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(8) P2PKH - Basical transaction",
+    "description": "pay to public key hash",
+    "url": "(8) P2PKH - Basical transaction.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(9) P2SH - Multiple Signature, Contract Embry",
+    "description": "contract",
+    "url": "(9) P2SH - Multiple Signature, Contract Embry.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(10) sequence and lock time",
+    "description": "contract,(forbbiden)",
+    "url": "(10) sequence and lock time.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(11) Code (1) - install bitcoin",
+    "description": "install bitcoin",
+    "url": "(11) Code (1) - install bitcoin.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(12) Usage - rpc",
+    "description": "client and rpc",
+    "url": "(12) Usage - rpc.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(13) Code (2) - private chain",
+    "description": "create private chain",
+    "url": "(13) Code (2) - private chain.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(14) DataStructure - address",
+    "description": "public key to address",
+    "url": "(14) DataStructure - address.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(15) 数论基础",
+    "description": "congruence, Euler",
+    "url": "(15) 数论基础.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(16) DH Diffie-Hellman",
+    "description": "modular arithmetic",
+    "url": "(16) DH Diffie-Hellman.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(17) RSA",
+    "description": "Euler",
+    "url": "(17) RSA.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(18) ECC",
+    "description": "abelian group",
+    "url": "(18) ECC.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(19) ECDH",
+    "description": "ECC generate key pair",
+    "url": "(19) ECDH.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(20) DSA 和 ECDSA",
+    "description": "signature",
+    "url": "(20) DSA 和 ECDSA.md",
+    "pic_name": "JiqGstEfoWAOHiTxclqi.png",
+    "pic_dimen":[],
+    "back_title": "",
+    "back_description": ""
+},
+{
+    "title": "(21) Bloom Filter",
+    "description": "huge data",
+    "url": "(21) Bloom Filter.md",
     "pic_name": "JiqGstEfoWAOHiTxclqi.png",
     "pic_dimen":[],
     "back_title": "",
     "back_description": ""
 }
+
 ]
