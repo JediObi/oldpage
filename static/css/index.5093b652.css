@@ -10445,6 +10445,7 @@ a.ant-btn-sm {
   height: 360px;
   margin: 0;
   padding: 40px;
+  border-radius: 3px;
   /* vertical-align: middle; */
   /* display: table-cell; */
   /* z-index: -1px; */
@@ -10806,7 +10807,6 @@ a.ant-btn-sm {
   height: 100%;
   padding: 0 15px;
   cursor: pointer;
-  border-radius: 3px;
 }
 .ads-card .pic {
   width: 25%;
@@ -10834,6 +10834,8 @@ a.ant-btn-sm {
 }
 .ads-tip {
   background: #36558f;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .ant-carousel .slick-slide {
   text-align: center;
@@ -10841,6 +10843,10 @@ a.ant-btn-sm {
   line-height: 240px;
   background: #36558f;
   overflow: hidden;
+}
+.ant-carousel .slick-list {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .main-header {
   position: fixed;
