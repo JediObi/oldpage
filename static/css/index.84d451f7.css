@@ -10806,6 +10806,7 @@ a.ant-btn-sm {
   height: 100%;
   padding: 0 15px;
   cursor: pointer;
+  border-radius: 3px;
 }
 .ads-card .pic {
   width: 25%;
