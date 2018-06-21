@@ -10842,7 +10842,7 @@ a.ant-btn-sm {
   overflow: hidden;
 }
 .main-header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   z-index: 1;
 }
