@@ -9089,7 +9089,33 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   /* text-align: right; */
   padding: 12px 16px 4px 16px;
   border-radius: 5px;
+  /* left: 38px; */
+  /* position: fixed; */
+  /* float: left; */
+  /* bottom: 120px; */
+  /* left:39px; */
   visibility: visible;
+  animation: fade-in 0.5s ease-in;
+  -webkit-animation: fade-in 0.5s ease-in;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.comment-editor:hover {
+  opacity: 1;
 }
 .submit-button {
   right: 18px;
@@ -9309,12 +9335,19 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .float-workshop-button {
   /* display: inline-block; */
   /* background-color: rgba(238, 99, 99, 0.8); */
+  visibility: visible;
   right: 30px;
   border: 0;
 }
 .float-workshop-button-icon {
   font-size: 30px;
   /* color:rgba(0,173,173, 0.65); */
+}
+.ant-popover-content {
+  /* position: fixed;
+    bottom: 120px;
+    left: 38px; */
+  /* visibility: hidden; */
 }
 /* 气泡箭头 不可见*/
 .ant-popover-arrow {
@@ -9343,14 +9376,30 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   padding: 2px 10px;
   vertical-align: middle;
 }
+.user-profile-href {
+  color: black;
+}
 .user-zone {
   display: inline-block;
   width: 25%;
 }
 .time-zone {
   display: inline-block;
-  width: 75%;
+  width: 50%;
   text-align: left;
+}
+.owner-zone {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  /* border: solid; */
+}
+.owner-zone span {
+  font-weight: 600 !important;
+  font-size: 85%;
+  padding: 2px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
 }
 .comment-item-body {
   padding: 2px 15px;
@@ -9364,5 +9413,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   border: 1px solid rgba(252, 51, 79, 0.3);
   /* padding: 2px; */
   border-radius: 2px;
-  margin: 4px 2px;
+  margin-top: 20px;
+}
+.comment-list {
+  text-align: center;
+  /* background-color: rgba(135,206,250,0.4); */
+  padding: 1px 10px 20px 10px;
+  border-radius: 3px;
+}
+.comment-list-pagination {
+  margin-top: 20px;
 }
