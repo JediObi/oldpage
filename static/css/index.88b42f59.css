@@ -9095,8 +9095,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   /* bottom: 120px; */
   /* left:39px; */
   visibility: visible;
-  animation: fade-in 0.5s ease-in;
-  -webkit-animation: fade-in 0.5s ease-in;
+  /* 取消动画效果，因为登录时的组件刷新不需要动画效果 */
+  /* animation: fade-in 0.5s ease-in ; */
+  /* -webkit-animation: fade-in 0.5s ease-in ; */
 }
 @keyframes fade-in {
   from {
@@ -9375,6 +9376,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   text-align: left;
   padding: 2px 10px;
   vertical-align: middle;
+  border-radius: 1px;
 }
 .user-profile-href {
   color: black;
@@ -9390,30 +9392,131 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 .owner-zone {
   display: inline-block;
-  width: 25%;
+  width: 15%;
   text-align: right;
+  line-height: inherit;
   /* border: solid; */
 }
 .owner-zone span {
+  margin: 2px;
   font-weight: 600 !important;
   font-size: 85%;
   padding: 2px 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
+  vertical-align: middle;
+}
+.pencil-zone {
+  display: inline-block;
+  height: 100%;
+  width: 10%;
+  text-align: left;
+  line-height: inherit;
+}
+.pencil-zone .pencil {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(73, 68, 68, 0.5);
+  margin-left: 10px;
+  width: 14px;
+  height: 16px;
+  margin-bottom: 2px;
+  vertical-align: bottom;
+}
+.pencil-zone .pencil:hover {
+  color: #000000;
 }
 .comment-item-body {
-  padding: 2px 15px;
+  padding: 15px;
   text-align: left;
+}
+.reactions-bar {
+  display: inline-block;
+}
+.reactions-bar > div {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-right: 1px solid rgba(252, 51, 79, 0.3);
+  height: 100%;
+}
+.reactions-bar > div > img {
+  width: 18px;
+  height: 18px;
+}
+.reaction-bar {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-right: 1px solid rgba(252, 51, 79, 0.3);
+  height: 100%;
+}
+.reaction-bar > img {
+  width: 18px;
+  height: 18px;
+}
+.reaction-bar-click-turn {
+  cursor: default;
+  opacity: 0.5;
+}
+.comment-item-footer {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  /* padding: 5px 0; */
+  border-top: 1px solid rgba(252, 51, 79, 0.3);
+}
+.display-turn {
+  /* visibility: hidden; */
+  display: none;
 }
 .comment-item {
   width: 100%;
-  max-height: 100px;
+  /* max-height: 100px; */
+  /* min-height: 100px; */
   /* background-color: #a3aeae; */
   /* 252 51 79 */
   border: 1px solid rgba(252, 51, 79, 0.3);
   /* padding: 2px; */
   border-radius: 2px;
   margin-top: 20px;
+}
+.comment-item-body {
+  padding: 15px;
+  text-align: left;
+}
+.control-pane {
+  display: inline-block;
+  margin-top: 15px;
+  width: 100%;
+  text-align: right;
+  padding: 0px 15px;
+}
+.cancel-button {
+  color: #fc334f;
+  font-weight: 600 !important;
+}
+.cancel-button:hover {
+  color: white;
+  font-weight: 600 !important;
+  background-color: #fc334f;
+}
+.update-comment-button {
+  margin-left: 5px;
+  color: white;
+  background-color: #28a745;
+  font-weight: 600 !important;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+  border-color: #1dac57;
+}
+.update-comment-button:hover {
+  color: white;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90);
+  border-color: #1a7543;
 }
 .comment-list {
   text-align: center;
