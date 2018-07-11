@@ -1,6 +1,6 @@
 ### **Code (1) - install bitcoin**
 
-<hr>
+
 
 ### (1) runtime environment
 ```
@@ -24,4 +24,3 @@
 ~:make install
 ```
 
-<hr>

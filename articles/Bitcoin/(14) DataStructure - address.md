@@ -1,16 +1,15 @@
 ### **DataStructure - address**
 
-<hr>
 
-public key ==> pubKey 32 bytes <br>
 
-HASH160(SHA256(pubKey)) ==> H(m) 20 bytes <br>
+public key ==> pubKey 32 bytes 
 
-```version``` 1 byte <br>
-version + H(m) 21 bytes <br>
+HASH160(SHA256(pubKey)) ==> H(m) 20 bytes 
 
-Base58(SHA256(SHA256(version+H(m)))) ==> get the first 4 bytes ==> checksum <br>
+```version``` 1 byte 
+version + H(m) 21 bytes 
 
-```address``` = Base58(version + H(m) + checksum) <br>
+Base58(SHA256(SHA256(version+H(m)))) ==> get the first 4 bytes ==> checksum 
 
-<hr>
+```address``` = Base58(version + H(m) + checksum) 
+

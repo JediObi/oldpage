@@ -1,13 +1,13 @@
 ### **Usage - rpc**
 
-<hr>
+
 
 ### (1) start service
 
 A node could start with by ```bitcoind```
-There are some configs of this command.  <br>
+There are some configs of this command.  
 You could set this commad through ```bitcoind -server=1```.
-Or ```bitcoind -datadir=<directory_path>``` or ```bitcoind -conf=<file_path>``` to specify config file. <br>
+Or ```bitcoind -datadir=<directory_path>``` or ```bitcoind -conf=<file_path>``` to specify config file. 
 
 + bitcoin.conf example
 
@@ -36,22 +36,22 @@ rpcallowip=0.0.0.0/0
 rpcuser=admin2
 rpcpassword=123
 ```
-```listen``` default 1;0 don't accept p2p connections from outside. 1 accept. <br>
-```connect``` only connect specified IP:port <br>
-```port``` the port to listen p2p connections from outside. <br>
-```rpcport``` the port to listen rpc connection <br>
-```server``` accept command and rpc command or not <br>
-```rpcuser, rpcpassword``` rpc user info <br>
-```testnet``` use test chain; 0 or 1 <br>
-```regtest``` Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development. <br>
-```dnsseed``` Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used) <br>
-```rpcallowip=0.0.0.0/0``` Allow JSON-RPC connections from specified source. <br>
+```listen``` default 1;0 don't accept p2p connections from outside. 1 accept. 
+```connect``` only connect specified IP:port 
+```port``` the port to listen p2p connections from outside. 
+```rpcport``` the port to listen rpc connection 
+```server``` accept command and rpc command or not 
+```rpcuser, rpcpassword``` rpc user info 
+```testnet``` use test chain; 0 or 1 
+```regtest``` Enter regression test mode, which uses a special chain in which blocks can be solved instantly. This is intended for regression testing tools and app development. 
+```dnsseed``` Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect used) 
+```rpcallowip=0.0.0.0/0``` Allow JSON-RPC connections from specified source. 
 
-<hr>
+
 
 ### (2) command on local and rpc
 
-create new transaction <br>
+create new transaction 
 
 + bitcoin-cli
 
