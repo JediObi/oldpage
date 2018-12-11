@@ -80,7 +80,7 @@
 },
 {
     "title": "Shell",
-    "description": "ssh,zip,...",
+    "description": "ssh,zip,NAT,内网穿透",
     "pic_name": "Shell_logo.svg",
     "pic_dimen": [480,480],
     "back_title": "",
