@@ -27,6 +27,7 @@ Second, modify /article/Shell/article_list.json, add an item with descriptions o
     "back_description": ""
 }
 ```
+```pic_name``` is the cover picture of the new article, you should put the picture file in the same path as the article.
 
 
 ## Ads Config
