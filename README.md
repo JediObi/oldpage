@@ -3,7 +3,7 @@
 
 You can add or modify topics here.
 
-If you wanna add a new topic, you have to create a new directory and it's name is same to the topic. Then you can modify introduction and specify icon for the new topic.
+If you wanna add a new topic, you have to create a new directory and it's name should be same to the topic. Then you can modify introduction and specify icon for the new topic.
 
 ## Artice List
 
